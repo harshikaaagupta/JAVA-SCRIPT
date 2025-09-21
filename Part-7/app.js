@@ -50,16 +50,65 @@ const mul = (a,b)=>(
 
 //Set Timeout - setTimeout(function,timeout) (inbuilt function , and is a window object)
 
-console.log("hi there!");
-setTimeout( () => {
-    console.log("Apna College");
-}, 4000);
-console.log("Welcome to");
+// console.log("hi there!");
+// setTimeout( () => {
+//     console.log("Apna College");
+// }, 4000);
+// console.log("Welcome to");
 
 //Set Interval - setInterval(function,timeout)
 
-let id = setInterval(() =>{
-    console.log("Apna College")
-},2000);
+// let id = setInterval(() =>{
+//     console.log("Apna College")
+// },2000);
 
-console.log(id);
+// console.log(id);
+// clearInterval(id);
+
+// this with Arrow Functions
+
+// const student={
+//     name:"aman",
+//     marks:95,
+//     prop:this, //global scope
+//     getName: function(){
+//         console.log(this);
+//         return this.name;
+//     },
+    // getMarks:() =>{
+    //     console.log(this); //parent's scope
+    //     return this.marks;
+    // }
+    // getInfo1: function(){
+    //     setTimeout(() =>{
+    //         console.log(this); //student
+    //     }, 2000);
+    // },
+    // getInfo2: function(){
+    //     setTimeout(function ()  {
+    //         console.log(this); //window
+    //     },2000);
+    // }
+
+// };
+
+// -----------------------------------------------------------------------------------------------------------------------------
+
+//Practice Questions
+const square = (n) =>{
+    return n*n;
+}
+console.log(square(8));
+
+const sq = (n) =>(
+    n**2
+)
+console.log(sq(9));
+
+
+let id = setInterval(() =>{
+    console.log("Hello World");
+},2000);
+setTimeout(() =>{
+    clearInterval(id);
+},10000);
