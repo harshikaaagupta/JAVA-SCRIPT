@@ -83,12 +83,64 @@ let gpa = students.map((el) =>{
 //-------------------------------------------------------------------------------------------------------
 // let n = [10,20,30,40,50].every((el) => (el%10 == 0));
 
-let num = [1,3,4,2,5,6,7,8,3];
-let result = num.reduce((min,el) =>{
-    if(el > min){
-        return min;
-    } else{
-        return el;
-    }
-});
-console.log(result);
+// let num = [1,3,4,2,5,6,7,8,3];
+// let result = num.reduce((min,el) =>{
+//     if(el > min){
+//         return min;
+//     } else{
+//         return el;
+//     }
+// });
+// console.log(result);
+
+//-------------------------------------------------------------------------------------------------------
+
+//Default Parameters -> Giving a default value to the arguments.
+
+// function sum(a,b = 3){
+//     console.log(a+b);
+// };
+// sum(8);
+
+//-------------------------------------------------------------------------------------------------------
+
+// Spread -> Expands an iterable into multiple values
+// let arr =[2,3,4,5,1,2,5,3,6,7,8,3,1,2,0,1];
+// console.log(Math.min(...arr));
+
+//-------------------------------------------------------------------------------------------------------
+
+//REST -> Allows a function to take a indefinite number of arguments and bundle them in an array.
+// function sum(...args){
+//     for(let i =0;i<args.length;i++){
+//         console.log("You gave us:" , args[i]);
+//     }
+// }
+
+// function min(a,b,c,d){
+//     console.log(arguments.length);
+// }
+
+//-------------------------------------------------------------------------------------------------------
+
+// Destructuring -> Storing values of array into multiple variables.
+let names =["tony","bruce","harshika","kartik"];
+let[winner,runnerup] = names;
+
+const student ={
+    name:"kartik",
+    age:19,
+    class:12,
+    subjects:["hindi","english","maths","chemistry"],
+    username:"kartik@01",
+    password:"harshu"
+};
+
+// let username = student.username;
+// let password = student.password;
+
+// let {username,password} = student;  //the key name should be same.
+
+let {username:user,password:pass, city="Agra"} = student;
+
+
