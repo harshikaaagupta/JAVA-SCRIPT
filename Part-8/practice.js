@@ -12,6 +12,12 @@
 // console.log(newArray)
 
 // Q3
-let str =["a","b","c","d"];
-let newArr = str.map((str) => str.toUpperCase());
-console.log(newArr);
+// let str =["a","b","c","d"];
+// let newArr = str.map((str) => str.toUpperCase());
+// console.log(newArr);
+
+// Q4
+
+
+
+//Q5
